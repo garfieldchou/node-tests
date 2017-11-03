@@ -8,9 +8,10 @@ it('should add two numbers', () => {
 	expect(res).toBe(44).toBeA('number');
 });
 
-it('should async add two numbers', () => {
+it('should async add two numbers', (done) => {
 	utils.asyncAdd(4, 3, (sum) => {
 		expect(sum).toBe(10).toBeA('number');
+		done();
 	});
 });
 
