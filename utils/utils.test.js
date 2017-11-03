@@ -8,6 +8,12 @@ it('should add two numbers', () => {
 	expect(res).toBe(44).toBeA('number');
 });
 
+it('should async add two numbers', () => {
+	utils.asyncAdd(4, 3, (sum) => {
+		expect(sum).toBe(10).toBeA('number');
+	});
+});
+
 it('should sqaure a number', () => {
 	var res = utils.square(3);
 
