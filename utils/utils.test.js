@@ -17,5 +17,12 @@ it('should sqaure a number', () => {
 it('should expect some values', () => {
 	// expect(12).toNotBe(12);
 	// expect({name: 'andrew'}).toNotEqual({name: 'Andrew'});
-	expect([2,3,4]).toExclude(5);
+	// expect([2,3,4]).toExclude(5);
+	expect({
+		name: 'Andrew',
+		age: 25,
+		location: 'Philadelphia'
+	}).toExclude({
+		age: 23
+	});
 });
