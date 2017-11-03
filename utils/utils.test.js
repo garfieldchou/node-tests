@@ -13,3 +13,8 @@ it('should sqaure a number', () => {
 
 	expect(res).toBe(9).toBeA('number');
 });
+
+it('should expect some values', () => {
+	// expect(12).toNotBe(12);
+	expect({name: 'Andrew'}).toBe({name: 'Andrew'});
+});
