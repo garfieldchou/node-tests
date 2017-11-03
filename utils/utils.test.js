@@ -14,15 +14,27 @@ it('should sqaure a number', () => {
 	expect(res).toBe(9).toBeA('number');
 });
 
-it('should expect some values', () => {
-	// expect(12).toNotBe(12);
-	// expect({name: 'andrew'}).toNotEqual({name: 'Andrew'});
-	// expect([2,3,4]).toExclude(5);
-	expect({
-		name: 'Andrew',
-		age: 25,
-		location: 'Philadelphia'
-	}).toExclude({
-		age: 23
+// sould verify first and last names are set
+// assert it includes firstName and lastName with proper values
+it('should set firstName and firstName', () => {
+	var user = {location: 'Philadelphia', age: 25};
+	var res = utils.setName(user, 'Andrew Mead');
+
+	expect(res).toInclude({
+		firstName: 'Andrew',
+		lastName: 'Mead'
 	});
 });
+
+// it('should expect some values', () => {
+// 	// expect(12).toNotBe(12);
+// 	// expect({name: 'andrew'}).toNotEqual({name: 'Andrew'});
+// 	// expect([2,3,4]).toExclude(5);
+// 	expect({
+// 		name: 'Andrew',
+// 		age: 25,
+// 		location: 'Philadelphia'
+// 	}).toExclude({
+// 		age: 23
+// 	});
+// });
