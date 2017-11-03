@@ -16,5 +16,6 @@ it('should sqaure a number', () => {
 
 it('should expect some values', () => {
 	// expect(12).toNotBe(12);
-	expect({name: 'Andrew'}).toBe({name: 'Andrew'});
+	// expect({name: 'andrew'}).toNotEqual({name: 'Andrew'});
+	expect([2,3,4]).toExclude(5);
 });
