@@ -30,7 +30,7 @@ it('should async square a number', (done) => {
 
 // sould verify first and last names are set
 // assert it includes firstName and lastName with proper values
-it('should set firstName and firstName', () => {
+it('should set firstName and lastName', () => {
 	var user = {location: 'Philadelphia', age: 25};
 	var res = utils.setName(user, 'Andrew Mead');
 
